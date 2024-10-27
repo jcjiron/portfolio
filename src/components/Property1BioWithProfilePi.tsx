@@ -1,4 +1,5 @@
 import { FunctionComponent } from "react";
+import { isMobile } from "../utils/dimes";
 
 export type Property1BioWithProfilePiType = {
 	className?: string;
@@ -7,6 +8,17 @@ export type Property1BioWithProfilePiType = {
 const Property1BioWithProfilePi: FunctionComponent<
 	Property1BioWithProfilePiType
 > = ({ className = "" }) => {
+
+	const shareToWhatsApp = () => {
+		const message = encodeURIComponent("Hey Juan Carlos");
+		const phoneNumber = "525583679908";
+		const whatsappUrl = isMobile()
+			? `whatsapp://send?phone=${phoneNumber}&text=${message}`
+			: `https://web.whatsapp.com/send?phone=${phoneNumber}&text=${message}`;
+
+		window.open(whatsappUrl, '_blank');
+	};
+
 	return (
 		<section
 			className={`self-stretch bg-white flex flex-col items-center justify-center py-[120px] px-10 box-border max-w-full text-center text-9xl text-goldenrod font-merriweather mq750:gap-[20px] mq750:pt-[33px] mq750:pb-[33px] mq750:box-border mq1275:pt-[51px] mq1275:pb-[51px] mq1275:box-border ${className}`}
@@ -17,7 +29,7 @@ const Property1BioWithProfilePi: FunctionComponent<
 						className="h-[704px] flex-1 relative rounded-13xl max-w-full overflow-hidden object-cover"
 						loading="lazy"
 						alt=""
-						src="/profile-image--lummi@2x.png"
+						src="/juan.webp"
 					/>
 				</div>
 				<div className="w-full flex flex-col items-center justify-start gap-[8px] max-w-[960px] mq1100:max-w-full">
@@ -28,7 +40,7 @@ const Property1BioWithProfilePi: FunctionComponent<
 						Juan Carlos Jirón Juárez is a seasoned software engineer
 						specializing in creating high-quality, luxury websites with stunning
 						animations and visuals. Recognized as the top frontend developer
-							and one of the best engineers in the country, Juan Carlos
+						and one of the best engineers in the country, Juan Carlos
 						is committed to continuous learning and writing maintainable,
 						excellent code. His expertise extends to both web and mobile
 						applications, making him a versatile and sought-after professional.
@@ -61,82 +73,82 @@ const Property1BioWithProfilePi: FunctionComponent<
 						</div>
 						<div className="self-stretch flex flex-col items-start justify-center min-w-[220px] text-left text-lg text-dimgray">
 							<div className="relative leading-[150%]">
-							Designed systems and apps at IBM, enhancing digital support.
+								Designed systems and apps at IBM, enhancing digital support.
 							</div>
 						</div>
 					</div>
 					<div className="self-stretch rounded-2xl bg-whitesmoke-200 flex flex-col items-start justify-center p-4 gap-[4px]">
 						<div className="relative leading-[160%] inline-block min-w-[30px]">
-						2018
+							2018
 						</div>
 						<div className="self-stretch flex flex-col items-start justify-center min-w-[220px] text-left text-lg text-dimgray">
 							<div className="self-stretch relative leading-[150%]">
-							Web development and innovative banking solutions for GFT and Sabadell
+								Web development and innovative banking solutions for GFT and Sabadell
 							</div>
 						</div>
 					</div>
 					<div className="self-stretch rounded-2xl bg-whitesmoke-200 flex flex-col items-start justify-center p-4 gap-[4px]">
 						<div className="relative leading-[160%] inline-block min-w-[30px]">
-						2019
+							2019
 						</div>
 						<div className="self-stretch flex flex-col items-start justify-center min-w-[220px] text-left text-lg text-dimgray">
 							<div className="self-stretch relative leading-[150%]">
-							Software improvement at Santander, reducing 95% of pre-production errors.
-							</div>
-						</div>
-					</div>
-						<div className="self-stretch rounded-2xl bg-whitesmoke-200 flex flex-col items-start justify-center p-4 gap-[4px]">
-						<div className="relative leading-[160%] inline-block min-w-[29px]">
-						2020
-						</div>
-						<div className="self-stretch flex flex-col items-start justify-center min-w-[220px] text-left text-lg text-dimgray">
-							<div className="self-stretch relative leading-[150%]">
-							Leadership at Casai: Android/Frontend teams.
+								Software improvement at Santander, reducing 95% of pre-production errors.
 							</div>
 						</div>
 					</div>
 					<div className="self-stretch rounded-2xl bg-whitesmoke-200 flex flex-col items-start justify-center p-4 gap-[4px]">
 						<div className="relative leading-[160%] inline-block min-w-[29px]">
-						2022
+							2020
 						</div>
 						<div className="self-stretch flex flex-col items-start justify-center min-w-[220px] text-left text-lg text-dimgray">
 							<div className="self-stretch relative leading-[150%]">
-							Agile bug resolution in critical apps for Girl Scouts USA.
+								Leadership at Casai: Android/Frontend teams.
 							</div>
 						</div>
 					</div>
 					<div className="self-stretch rounded-2xl bg-whitesmoke-200 flex flex-col items-start justify-center p-4 gap-[4px]">
 						<div className="relative leading-[160%] inline-block min-w-[29px]">
-						2022
+							2022
 						</div>
 						<div className="self-stretch flex flex-col items-start justify-center min-w-[220px] text-left text-lg text-dimgray">
 							<div className="self-stretch relative leading-[150%]">
-							Specialized in Google Maps and Geolocation at SPS
+								Agile bug resolution in critical apps for Girl Scouts USA.
 							</div>
 						</div>
 					</div>
-          <div className="self-stretch rounded-2xl bg-whitesmoke-200 flex flex-col items-start justify-center p-4 gap-[4px]">
+					<div className="self-stretch rounded-2xl bg-whitesmoke-200 flex flex-col items-start justify-center p-4 gap-[4px]">
 						<div className="relative leading-[160%] inline-block min-w-[29px]">
-						2023
+							2022
 						</div>
 						<div className="self-stretch flex flex-col items-start justify-center min-w-[220px] text-left text-lg text-dimgray">
 							<div className="self-stretch relative leading-[150%]">
-							Led architecture and development at MovingLake.
+								Specialized in Google Maps and Geolocation at SPS
 							</div>
 						</div>
 					</div>
-          <div className="self-stretch rounded-2xl bg-whitesmoke-200 flex flex-col items-start justify-center p-4 gap-[4px]">
+					<div className="self-stretch rounded-2xl bg-whitesmoke-200 flex flex-col items-start justify-center p-4 gap-[4px]">
 						<div className="relative leading-[160%] inline-block min-w-[29px]">
-						2024
+							2023
 						</div>
 						<div className="self-stretch flex flex-col items-start justify-center min-w-[220px] text-left text-lg text-dimgray">
 							<div className="self-stretch relative leading-[150%]">
-							Innovating at TCS with scalable solutions.
+								Led architecture and development at MovingLake.
+							</div>
+						</div>
+					</div>
+					<div className="self-stretch rounded-2xl bg-whitesmoke-200 flex flex-col items-start justify-center p-4 gap-[4px]">
+						<div className="relative leading-[160%] inline-block min-w-[29px]">
+							2024
+						</div>
+						<div className="self-stretch flex flex-col items-start justify-center min-w-[220px] text-left text-lg text-dimgray">
+							<div className="self-stretch relative leading-[150%]">
+								Innovating at TCS with scalable solutions.
 							</div>
 						</div>
 					</div>
 				</div>
-				<button className="cursor-pointer [border:none] py-[11px] px-5 bg-gold w-full rounded-lg flex flex-row items-center justify-center box-border max-w-[360px]">
+				<button onClick={shareToWhatsApp} className="cursor-pointer [border:none] py-[11px] px-5 bg-gold w-full rounded-lg flex flex-row items-center justify-center box-border max-w-[360px]">
 					<div className="flex flex-row items-center justify-center p-1">
 						<div className="relative text-lg leading-[150%] font-merriweather text-gray-200 text-center inline-block min-w-[84px]">
 							Hire Juan

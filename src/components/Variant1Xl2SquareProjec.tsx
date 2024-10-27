@@ -8,6 +8,7 @@ export type Variant1Xl2SquareProjecType = {
 const Variant1Xl2SquareProjec: FunctionComponent<
   Variant1Xl2SquareProjecType
 > = ({ className = "" }) => {
+
   return (
     <section
       className={`self-stretch bg-white flex flex-col items-center justify-center py-[120px] px-10 box-border max-w-full text-left text-37xl text-gray-100 font-karla mq750:gap-[20px] mq1100:pt-[51px] mq1100:pb-[51px] mq1100:box-border mq450:pt-[33px] mq450:pb-[33px] mq450:box-border mq1275:pt-[78px] mq1275:pb-[78px] mq1275:box-border ${className}`}
@@ -18,30 +19,30 @@ const Variant1Xl2SquareProjec: FunctionComponent<
             Featured Projects
           </b>
           <div className="self-stretch relative text-lg leading-[150%] font-merriweather text-dimgray">
-            A glimpse into my portfolio
+            Full Stack Engineer
           </div>
         </div>
         <div className="self-stretch flex flex-col items-center justify-start gap-[40px] max-w-full text-lg font-merriweather mq750:gap-[20px]">
           <div className="self-stretch flex flex-row flex-wrap items-start justify-center max-w-full mq750:gap-[20px]">
             <PortfolioCard
-              imageLummi="/image-lummi@2x.png"
-              heading="Elegant E-commerce"
-              text="web design, UX"
+              imageLummi="/fesa.webp"
+              heading="Android delivery apps"
+              text="mobile, UX"
               icon="/icon.svg"
             />
           </div>
           <div className="self-stretch flex flex-row flex-wrap items-start justify-center gap-[40px_38px] max-w-full mq750:gap-[19px]">
             <PortfolioCard
-              imageLummi="/image-lummi-1@2x.png"
-              heading="Corporate Branding"
-              text="branding, identity"
+              imageLummi="/sales.webp"
+              heading="Sales Platform"
+              text="sales, Next.js, Tailwind CSS"
               icon="/icon-1.svg"
               propMinWidth="551px"
             />
             <PortfolioCard
-              imageLummi="/image-lummi-2@2x.png"
-              heading="Interactive Portfolio"
-              text="web design, animations"
+              imageLummi="/open_source.webp"
+              heading="Open Source"
+              text="web, Real State"
               icon="/icon.svg"
               propMinWidth="551px"
             />

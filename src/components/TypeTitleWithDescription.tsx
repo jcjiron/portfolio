@@ -19,7 +19,7 @@ const TypeTitleWithDescription: FunctionComponent<
               Why Choose Me
             </div>
             <b className="self-stretch relative text-32xl tracking-[-0.02em] leading-[120%] [display:-webkit-inline-box] font-inter text-gray-100 overflow-hidden text-ellipsis [-webkit-line-clamp:3] [-webkit-box-orient:vertical] mq750:text-22xl mq750:leading-[49px] mq450:text-12xl mq450:leading-[37px]">
-              Innovative Designer
+              Innovative Developer
             </b>
           </div>
           <div className="self-stretch relative leading-[150%] text-dimgray">
