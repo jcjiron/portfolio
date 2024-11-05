@@ -1,5 +1,8 @@
 import { FunctionComponent } from "react";
 import { isMobile } from "../utils/dimes";
+import { Button } from "./Button";
+import { Icon } from "./Icon";
+import { instagramUrl, linkedinUrl, twitterUrl } from "../utils/social";
 
 export type Property1BioWithProfilePiType = {
 	className?: string;
@@ -148,32 +151,19 @@ const Property1BioWithProfilePi: FunctionComponent<
 						</div>
 					</div>
 				</div>
-				<button onClick={shareToWhatsApp} className="cursor-pointer [border:none] py-[11px] px-5 bg-gold w-full rounded-lg flex flex-row items-center justify-center box-border max-w-[360px]">
-					<div className="flex flex-row items-center justify-center p-1">
-						<div className="relative text-lg leading-[150%] font-merriweather text-gray-200 text-center inline-block min-w-[84px]">
-							Hire Juan
-						</div>
-					</div>
-				</button>
+				<Button onClick={shareToWhatsApp} className="w-full ">
+					Hire Juan
+				</Button>
 				<div className="flex flex-row items-start justify-start gap-[16px]">
-					<img
-						className="h-6 w-6 relative min-h-[24px]"
-						loading="lazy"
-						alt=""
-						src="/twitterlogo.svg"
-					/>
-					<img
-						className="h-6 w-6 relative min-h-[24px]"
-						loading="lazy"
-						alt=""
-						src="/instagramlogo.svg"
-					/>
-					<img
-						className="h-6 w-6 relative min-h-[24px]"
-						loading="lazy"
-						alt=""
-						src="/linkedinlogo.svg"
-					/>
+					<a href={twitterUrl} target="_blank" rel="noreferrer">
+						<Icon icon="/twitterlogo.svg" />
+					</a>
+					<a href={instagramUrl} target="_blank" rel="noreferrer">
+						<Icon icon="/instagramlogo.svg" />
+					</a>
+					<a href={linkedinUrl} target="_blank" rel="noreferrer">
+						<Icon icon="/linkedinlogo.svg" />
+					</a>
 				</div>
 			</div>
 		</section>

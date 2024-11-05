@@ -47,8 +47,8 @@ const LuxuriousSoftwareEngineerPo: FunctionComponent = () => {
       <section className="self-stretch bg-white flex flex-row flex-wrap items-center justify-center max-w-full">
         <QuoteWrapper
           imageLummiCategoryavatars="/image-lummi-categoryavatars@2x.png"
-          testimonial="“Juan Carlos transformed our website into a luxurious, high-performing masterpiece.”"
-          name1="Maria Gomez, CEO"
+          testimonial="“Thanks for your resillience”"
+          name1="Edgar Cabrera, CTO"
         />
         <QuoteWrapper
           imageLummiCategoryavatars="/image-lummi-categoryavatars-1@2x.png"

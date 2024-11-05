@@ -1,4 +1,5 @@
 import { FunctionComponent, useMemo, type CSSProperties } from "react";
+import { Button } from "./Button";
 
 export type PortfolioCardType = {
   className?: string;
@@ -47,9 +48,7 @@ const PortfolioCard: FunctionComponent<PortfolioCardType> = ({
             {text}
           </div>
         </div>
-        <div className="rounded-980xl bg-gold flex flex-row items-center justify-center py-3 px-6">
-          <img className="h-6 w-6 relative" loading="lazy" alt="" src={icon} />
-        </div>
+        {icon && <Button icon="icon.svg" />}
       </div>
     </div>
   );
