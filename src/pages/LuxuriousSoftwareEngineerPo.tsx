@@ -5,6 +5,7 @@ import Variant1Xl2SquareProjec from "../components/Variant1Xl2SquareProjec";
 import TypeTitleWithDescription from "../components/TypeTitleWithDescription";
 import QuoteWrapper from "../components/QuoteWrapper";
 import FrameComponent from "../components/FrameComponent";
+import { HeroBanner } from "../components/HeroBanner";
 
 const LuxuriousSoftwareEngineerPo: FunctionComponent = () => {
   return (
@@ -40,6 +41,7 @@ const LuxuriousSoftwareEngineerPo: FunctionComponent = () => {
           </div>
         </div>
       </header>
+      <HeroBanner />
       <TypeHeroWithHugeImage />
       <Property1BioWithProfilePi />
       <Variant1Xl2SquareProjec />

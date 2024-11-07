@@ -18,14 +18,6 @@ const TypeHeroWithHugeImage: FunctionComponent<TypeHeroWithHugeImageType> = ({
     <section
       className={`self-stretch bg-white flex flex-col items-center justify-start max-w-full z-[1] text-left text-53xl text-gray-100 font-karla ${className}`}
     >
-      <div className="w-full overflow-hidden flex flex-row items-center justify-center max-w-[1440px]">
-        <img
-          className="h-[484px] flex-1 relative max-w-full overflow-hidden object-cover"
-          loading="lazy"
-          alt=""
-          src="/image--lummi@2x.png"
-        />
-      </div>
       <div className="w-full flex flex-col items-start justify-center p-6 box-border max-w-[1440px]">
         <div className="w-[840px] flex flex-col items-start justify-center gap-[40px] max-w-[840px] mq1100:max-w-full mq450:gap-[20px]">
           <div className="self-stretch flex flex-col items-start justify-center gap-[16px]">

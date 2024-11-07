@@ -56,7 +56,7 @@ const Property1BioWithProfilePi: FunctionComponent<
 						</div>
 						<div className="self-stretch flex flex-col items-start justify-center min-w-[220px] text-left text-lg text-dimgray">
 							<div className="self-stretch relative leading-[150%]">
-								Started career as a frontend developer.
+								Started career as an Android developer
 							</div>
 						</div>
 					</div>
@@ -66,7 +66,7 @@ const Property1BioWithProfilePi: FunctionComponent<
 						</div>
 						<div className="self-stretch flex flex-col items-start justify-center min-w-[220px] text-left text-lg text-dimgray">
 							<div className="self-stretch relative leading-[150%]">
-								Started career as a Frontend Developer
+								Moved career to Frontend Projects
 							</div>
 						</div>
 					</div>
@@ -76,7 +76,7 @@ const Property1BioWithProfilePi: FunctionComponent<
 						</div>
 						<div className="self-stretch flex flex-col items-start justify-center min-w-[220px] text-left text-lg text-dimgray">
 							<div className="relative leading-[150%]">
-								Designed systems and apps at IBM, enhancing digital support.
+								Designed systems and apps at IBM
 							</div>
 						</div>
 					</div>
