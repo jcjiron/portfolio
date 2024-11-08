@@ -29,7 +29,7 @@ const TypeHeroWithHugeImage: FunctionComponent<TypeHeroWithHugeImageType> = ({
             </div>
           </div>
           <Button onClick={goMedium} className="self-stretch">
-            Explore My Work
+            Explore My Blog
           </Button>
         </div>
       </div>
