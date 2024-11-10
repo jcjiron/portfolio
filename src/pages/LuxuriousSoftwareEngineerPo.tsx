@@ -48,14 +48,14 @@ const LuxuriousSoftwareEngineerPo: FunctionComponent = () => {
       <TypeTitleWithDescription />
       <section className="self-stretch bg-white flex flex-row flex-wrap items-center justify-center max-w-full">
         <QuoteWrapper
-          imageLummiCategoryavatars="/image-lummi-categoryavatars@2x.png"
+          imageLummiCategoryavatars="/edgar_cabrera.webp"
           testimonial="“Thanks for your resillience”"
           name1="Edgar Cabrera, CTO"
         />
         <QuoteWrapper
           imageLummiCategoryavatars="/image-lummi-categoryavatars-1@2x.png"
-          testimonial="“Our new website is stunning and has significantly improved our online presence.”"
-          name1="David Smith, Director"
+          testimonial="“You have all the technical skills needed.”"
+          name1="Julio Cueto, Tech Manager"
           propBackgroundColor="#f0f2f5"
           propMarginLeft="-2px"
         />
