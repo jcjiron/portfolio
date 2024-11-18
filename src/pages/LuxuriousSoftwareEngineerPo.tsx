@@ -6,6 +6,8 @@ import TypeTitleWithDescription from "../components/TypeTitleWithDescription";
 import QuoteWrapper from "../components/QuoteWrapper";
 import FrameComponent from "../components/FrameComponent";
 import { HeroBanner } from "../components/HeroBanner";
+import { Link } from "../components/Link";
+import { githubUrl, linkedinUrl, medium, phoneNumber, whatsappUrl } from "../utils/social";
 
 const LuxuriousSoftwareEngineerPo: FunctionComponent = () => {
   return (
@@ -53,8 +55,8 @@ const LuxuriousSoftwareEngineerPo: FunctionComponent = () => {
           name1="Edgar Cabrera, CTO"
         />
         <QuoteWrapper
-          imageLummiCategoryavatars="/image-lummi-categoryavatars-1@2x.png"
-          testimonial="“You have all the technical skills needed.”"
+          imageLummiCategoryavatars="/julio_cueto.webp"
+          testimonial="“It's good to work with someone so focused”"
           name1="Julio Cueto, Tech Manager"
           propBackgroundColor="#f0f2f5"
           propMarginLeft="-2px"
@@ -71,18 +73,18 @@ const LuxuriousSoftwareEngineerPo: FunctionComponent = () => {
                 </div>
               </div>
               <div className="self-stretch flex flex-row items-start justify-between gap-[20px] mq450:flex-wrap">
-                <div className="relative leading-[150%] inline-block min-w-[60px]">
-                  Profile
-                </div>
-                <div className="relative leading-[150%] inline-block min-w-[73px]">
-                  Projects
-                </div>
-                <div className="relative leading-[150%] inline-block min-w-[81px]">
+                <Link href={githubUrl} target="_blank">
+                  GitHub
+                </Link>
+                <Link href={medium} target="_blank">
+                  Blog
+                </Link>
+                <Link href={linkedinUrl} target="_blank">
                   LinkedIn
-                </div>
-                <div className="relative leading-[150%] inline-block min-w-[69px]">
+                </Link>
+                <Link href={whatsappUrl} target="_blank">
                   Contact
-                </div>
+                </Link>
               </div>
             </div>
           </div>

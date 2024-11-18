@@ -2,7 +2,7 @@ import { FunctionComponent } from "react";
 import { isMobile } from "../utils/dimes";
 import { Button } from "./Button";
 import { Icon } from "./Icon";
-import { instagramUrl, linkedinUrl, twitterUrl } from "../utils/social";
+import { instagramUrl, linkedinUrl, phoneNumber, twitterUrl, whatsappUrl } from "../utils/social";
 
 export type Property1BioWithProfilePiType = {
 	className?: string;
@@ -13,12 +13,6 @@ const Property1BioWithProfilePi: FunctionComponent<
 > = ({ className = "" }) => {
 
 	const shareToWhatsApp = () => {
-		const message = encodeURIComponent("Hey Juan Carlos");
-		const phoneNumber = "525583679908";
-		const whatsappUrl = isMobile()
-			? `whatsapp://send?phone=${phoneNumber}&text=${message}`
-			: `https://web.whatsapp.com/send?phone=${phoneNumber}&text=${message}`;
-
 		window.open(whatsappUrl, '_blank');
 	};
 
