@@ -5,7 +5,10 @@ import {
   useNavigationType,
   useLocation,
 } from "react-router-dom";
-import LuxuriousSoftwareEngineerPo from "./pages/LuxuriousSoftwareEngineerPo";
+import Home from "./pages/Home";
+import { PrivacyPolicy } from "./pages/PrivacyPolicy";
+import { TermsOfService } from "./pages/TermsOfService";
+import { CookieSettings } from "./pages/CookieSettings";
 
 function App() {
   const action = useNavigationType();
@@ -45,7 +48,10 @@ function App() {
 
   return (
     <Routes>
-      <Route path="/" element={<LuxuriousSoftwareEngineerPo />} />
+      <Route path="/" element={<Home />} />
+      <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+      <Route path="/terms-of-service" element={<TermsOfService />} />
+      <Route path="/cookie-settings" element={<CookieSettings />} />
     </Routes>
   );
 }

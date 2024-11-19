@@ -1,15 +1,17 @@
 import { FunctionComponent } from "react";
 import TypeHeroWithHugeImage from "../components/TypeHeroWithHugeImage";
 import Property1BioWithProfilePi from "../components/Property1BioWithProfilePi";
-import Variant1Xl2SquareProjec from "../components/Variant1Xl2SquareProjec";
+import SquareProjec from "../components/SquareProjec";
 import TypeTitleWithDescription from "../components/TypeTitleWithDescription";
 import QuoteWrapper from "../components/QuoteWrapper";
 import FrameComponent from "../components/FrameComponent";
 import { HeroBanner } from "../components/HeroBanner";
 import { Link } from "../components/Link";
 import { githubUrl, linkedinUrl, medium, phoneNumber, whatsappUrl } from "../utils/social";
+import { NavLink } from "../components/NavLink";
+import { PagesUrls } from "../utils/PagesId";
 
-const LuxuriousSoftwareEngineerPo: FunctionComponent = () => {
+const Home: FunctionComponent = () => {
   return (
     <div className="w-full relative bg-white flex flex-col items-start justify-start pt-0 px-0 pb-20 box-border leading-[normal] tracking-[normal]">
       <header className="self-stretch bg-white overflow-hidden hidden flex-row items-center justify-between p-2 box-border top-[0] z-[99] sticky max-w-full gap-[0px] [row-gap:20px] text-left text-base text-gray-100 font-merriweather">
@@ -46,7 +48,7 @@ const LuxuriousSoftwareEngineerPo: FunctionComponent = () => {
       <HeroBanner />
       <TypeHeroWithHugeImage />
       <Property1BioWithProfilePi />
-      <Variant1Xl2SquareProjec />
+      <SquareProjec />
       <TypeTitleWithDescription />
       <section className="self-stretch bg-white flex flex-row flex-wrap items-center justify-center max-w-full">
         <QuoteWrapper
@@ -90,19 +92,19 @@ const LuxuriousSoftwareEngineerPo: FunctionComponent = () => {
           </div>
           <div className="self-stretch h-px relative bg-gray-100" />
           <div className="self-stretch flex flex-row items-start justify-between max-w-full gap-[20px] text-sm mq1100:flex-wrap">
-            <div className="relative leading-[160%]">
+            <small className={`relative leading-[150%] inline-block min-w-[60px]" text-dimgray active:text-dimgray no-underline text-sm`}>
               © 2024 Juan Carlos. All rights reserved.
-            </div>
+            </small>
             <div className="w-[369px] flex flex-row items-start justify-start gap-[24px] max-w-full mq450:flex-wrap">
-              <div className="relative leading-[160%] inline-block min-w-[97px]">
+              <NavLink to={PagesUrls.PrivacyPolicy} className={`text-sm`}>
                 Privacy Policy
-              </div>
-              <div className="flex-1 relative leading-[160%] inline-block min-w-[75px]">
+              </NavLink>
+              <NavLink to={PagesUrls.TermsOfService} className={`text-sm`}>
                 Terms of Service
-              </div>
-              <div className="flex-1 relative leading-[160%] inline-block min-w-[70px]">
+              </NavLink>
+              <NavLink to={PagesUrls.CookieSettings} className={`text-sm`}>
                 Cookie Settings
-              </div>
+              </NavLink>
             </div>
           </div>
         </div>
@@ -111,4 +113,4 @@ const LuxuriousSoftwareEngineerPo: FunctionComponent = () => {
   );
 };
 
-export default LuxuriousSoftwareEngineerPo;
+export default Home;

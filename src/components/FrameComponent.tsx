@@ -2,6 +2,8 @@ import { FunctionComponent } from "react";
 import Input from "./Input";
 import { Button } from "./Button";
 import { ContactForm } from "./ContactForm";
+import { Link } from "./Link";
+import { email, mexicoCityLocation, whatsappUrl } from "../utils/social";
 
 export type FrameComponentType = {
   className?: string;
@@ -37,9 +39,12 @@ const FrameComponent: FunctionComponent<FrameComponentType> = ({
                 <div className="self-stretch relative leading-[150%] overflow-hidden text-ellipsis whitespace-nowrap">
                   Email
                 </div>
-                <div className="self-stretch relative text-sm leading-[160%] text-dimgray [display:-webkit-inline-box] overflow-hidden text-ellipsis [-webkit-line-clamp:3] [-webkit-box-orient:vertical] whitespace-nowrap">
-                  jironjuarezjuan@outlook.com
-                </div>
+                <Link
+                  className="self-stretch relative text-sm leading-[160%] text-dimgray [display:-webkit-inline-box] overflow-hidden text-ellipsis [-webkit-line-clamp:3] [-webkit-box-orient:vertical] whitespace-nowrap"
+                  href={`mailto:${email}`}
+                >
+                  {email}
+                </Link>
               </div>
             </div>
             <div className="w-full flex flex-row items-start justify-start gap-[16px] min-w-[272px] max-w-[400px] mq450:flex-wrap mq450:max-w-full">
@@ -52,9 +57,9 @@ const FrameComponent: FunctionComponent<FrameComponentType> = ({
                 <div className="self-stretch relative leading-[150%] overflow-hidden text-ellipsis whitespace-nowrap">
                   Phone
                 </div>
-                <div className="self-stretch relative text-sm leading-[160%] text-dimgray [display:-webkit-inline-box] overflow-hidden text-ellipsis [-webkit-line-clamp:3] [-webkit-box-orient:vertical]">
+                <Link href={whatsappUrl} target="_blank" className="self-stretch relative text-sm leading-[160%] text-dimgray [display:-webkit-inline-box] overflow-hidden text-ellipsis [-webkit-line-clamp:3] [-webkit-box-orient:vertical] whitespace-nowrap">
                   +52 (55) 836-79908
-                </div>
+                </Link>
               </div>
             </div>
             <div className="w-full flex flex-row items-start justify-start gap-[16px] min-w-[272px] max-w-[400px] mq450:flex-wrap mq450:max-w-full">
@@ -68,9 +73,9 @@ const FrameComponent: FunctionComponent<FrameComponentType> = ({
                 <div className="self-stretch relative leading-[150%] overflow-hidden text-ellipsis whitespace-nowrap">
                   Location
                 </div>
-                <div className="self-stretch relative text-sm leading-[160%] text-dimgray [display:-webkit-inline-box] overflow-hidden text-ellipsis [-webkit-line-clamp:3] [-webkit-box-orient:vertical]">
+                <Link href={mexicoCityLocation} target="_blank" className="self-stretch relative text-sm leading-[160%] text-dimgray [display:-webkit-inline-box] overflow-hidden text-ellipsis [-webkit-line-clamp:3] [-webkit-box-orient:vertical] whitespace-nowrap">
                   Mexico City, Mexico
-                </div>
+                </Link>
               </div>
             </div>
           </div>

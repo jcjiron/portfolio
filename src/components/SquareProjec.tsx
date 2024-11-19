@@ -5,7 +5,7 @@ export type Variant1Xl2SquareProjecType = {
   className?: string;
 };
 
-const Variant1Xl2SquareProjec: FunctionComponent<
+const SquareProjec: FunctionComponent<
   Variant1Xl2SquareProjecType
 > = ({ className = "" }) => {
 
@@ -26,6 +26,7 @@ const Variant1Xl2SquareProjec: FunctionComponent<
               heading="Android delivery apps"
               text="mobile, UX"
               icon="/icon.svg"
+              url=""
             />
           </div>
           <div className="self-stretch flex flex-row flex-wrap items-start justify-center gap-[40px_38px] max-w-full mq750:gap-[19px]">
@@ -34,12 +35,16 @@ const Variant1Xl2SquareProjec: FunctionComponent<
               heading="Sales Platform"
               text="sales, Next.js, Tailwind CSS"
               icon="/icon-1.svg"
+              url=""
+
             />
             <PortfolioCard
               imageLummi="/open_source.webp"
               heading="Open Source"
               text="web, Real State"
               icon="/icon.svg"
+              url=""
+
             />
           </div>
         </div>
@@ -48,4 +53,4 @@ const Variant1Xl2SquareProjec: FunctionComponent<
   );
 };
 
-export default Variant1Xl2SquareProjec;
+export default SquareProjec;
