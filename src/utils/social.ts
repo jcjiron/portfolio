@@ -7,6 +7,7 @@ export const twitterUrl = "https://x.com/jcjiron4";
 export const githubUrl = "https://github.com/jcjiron";
 export const facebookUrl = "https://www.facebook.com/juan.carlos.jironj";
 export const medium = "https://medium.com/@jcjiron4"
+export const resume = "https://docs.google.com/document/d/1YjgWF9_nNNnLw58lAH0fitAJHaURiZuVxDPp61s9lvU/edit?usp=sharing"
 export const phoneNumber = "525583679908";
 export const email = "jironjuarezjuan@outlook.com";
 export const mexicoCityLocation = "https://www.google.com/maps?q=Mexico+City";

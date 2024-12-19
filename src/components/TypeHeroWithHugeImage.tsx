@@ -1,6 +1,6 @@
 import { FunctionComponent } from "react";
+import { resume } from "../utils/social";
 import { Button } from "./Button";
-import { medium } from "../utils/social";
 
 export type TypeHeroWithHugeImageType = {
   className?: string;
@@ -10,8 +10,8 @@ const TypeHeroWithHugeImage: FunctionComponent<TypeHeroWithHugeImageType> = ({
   className = "",
 }) => {
 
-  const goMedium = () => {
-    window.open(medium, "_blank")
+  const seeResume = () => {
+    window.open(resume, "_blank")
   }
 
   return (
@@ -25,11 +25,11 @@ const TypeHeroWithHugeImage: FunctionComponent<TypeHeroWithHugeImageType> = ({
               Luxury Web Designs
             </b>
             <div className="self-stretch relative text-3xl leading-[31px] font-merriweather text-dimgray mq450:text-lg mq450:leading-[25px]">
-              Exquisite websites for your business.
+              Are you a recruiter?
             </div>
           </div>
-          <Button onClick={goMedium} className="self-stretch">
-            Explore My Blog
+          <Button onClick={seeResume} className="self-stretch">
+            See my resume here
           </Button>
         </div>
       </div>
