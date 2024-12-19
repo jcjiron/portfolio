@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Button } from './Button'
 import Input from './Input'
 import TextArea from './TextArea'
+import { postForm } from '../helpers/form'
 
 export const ContactForm = () => {
     const [formValue, setFormValue] = useState({ name: "", email: "", message: "" });
@@ -16,7 +17,12 @@ export const ContactForm = () => {
 
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        alert(JSON.stringify(formValue));
+
+        try {
+            postForm(formValue);
+        } catch (e) {
+            console.error(e);
+        }
     };
 
     return (

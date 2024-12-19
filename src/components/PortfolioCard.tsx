@@ -1,6 +1,5 @@
 import { FunctionComponent, useMemo, type CSSProperties } from "react";
 import { Button } from "./Button";
-import { medium } from "../utils/social";
 
 export type PortfolioCardType = {
   className?: string;
@@ -21,6 +20,7 @@ const PortfolioCard: FunctionComponent<PortfolioCardType> = ({
   text,
   icon,
   propMinWidth,
+  url,
 }) => {
   const portfolioCardStyle: CSSProperties = useMemo(() => {
     return {
@@ -29,7 +29,7 @@ const PortfolioCard: FunctionComponent<PortfolioCardType> = ({
   }, [propMinWidth]);
 
   const goToProject = () => {
-    window.open(medium, "_blank")
+    window.open(url, "_blank")
   }
 
   return (
@@ -41,22 +41,19 @@ const PortfolioCard: FunctionComponent<PortfolioCardType> = ({
         <img
           className="h-[600px] flex-1 relative max-w-full overflow-hidden object-cover mq750:h-[350px] hover:cursor-pointer"
           loading="lazy"
-          alt=""
+          alt={heading}
           src={imageLummi}
           onClick={goToProject}
         />
       </div>
       <div className="self-stretch flex flex-row items-center justify-start gap-[24px] min-w-[240px] max-w-full mq1100:flex-wrap mq750:flex-row">
         <div className="flex-1 flex flex-col items-start justify-start">
-          <div className="self-stretch relative leading-[150%] overflow-hidden text-ellipsis whitespace-nowrap " onClick={goToProject}>
+          <div className="self-stretch relative leading-[150%] overflow-hidden text-ellipsis" onClick={goToProject}>
             <p className="w-fit my-0 hover:underline hover:cursor-pointer">{heading}</p>
           </div>
           <div className="self-stretch relative text-base leading-[150%] text-dimgray overflow-hidden text-ellipsis whitespace-nowrap">
             {text}
           </div>
-        </div>
-        <div className="mq750:hidden">
-          {icon && <Button icon="icon.svg" onClick={goToProject} />}
         </div>
       </div>
     </div>

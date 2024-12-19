@@ -64,15 +64,12 @@ const Home: FunctionComponent = () => {
           propMarginLeft="-2px"
         />
       </section>
-      <FrameComponent />
-      <footer className="self-stretch flex flex-row items-start justify-start py-0 px-16 box-border max-w-full text-left text-lg text-gray-100 font-merriweather mq750:pl-8 mq750:pr-8 mq750:box-border">
+      {/* <FrameComponent /> */}
+      <footer className="self-stretch flex flex-row items-start justify-start py-24 px-16 box-border max-w-full text-left text-lg text-gray-100 font-merriweather mq750:pl-8 mq750:pr-8 mq750:box-border">
         <div className="flex-1 flex flex-col items-start justify-start gap-[32px] max-w-full mq750:gap-[16px]">
           <div className="self-stretch flex flex-row items-start justify-center pt-0 px-5 pb-8 box-border max-w-full">
             <div className="w-[379px] flex flex-col items-start justify-start gap-[32px] max-w-full mq450:gap-[16px]">
               <div className="self-stretch flex flex-row items-start justify-center py-0 px-5">
-                <div className="relative leading-[150%] inline-block min-w-[101px]">
-                  Juan Carlos
-                </div>
               </div>
               <div className="self-stretch flex flex-row items-start justify-between gap-[20px] mq450:flex-wrap">
                 <Link href={githubUrl} target="_blank">

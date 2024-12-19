@@ -23,27 +23,27 @@ const SquareProjec: FunctionComponent<
           <div className="self-stretch flex flex-row flex-wrap items-start justify-center max-w-full mq750:gap-[20px]">
             <PortfolioCard
               imageLummi="/fesa.webp"
-              heading="Android delivery apps"
-              text="mobile, UX"
+              heading="Delivery Application for a Pharmaceutical Company in Mexico"
+              text="android Development, Testign, Mobile"
               icon="/icon.svg"
-              url=""
+              url="https://medium.com/@jcjiron4/farmacias-especializadas-fesa-107edbe6197d"
             />
           </div>
           <div className="self-stretch flex flex-row flex-wrap items-start justify-center gap-[40px_38px] max-w-full mq750:gap-[19px]">
             <PortfolioCard
-              imageLummi="/sales.webp"
-              heading="Sales Platform"
-              text="sales, Next.js, Tailwind CSS"
+              imageLummi="/casai.webp"
+              heading="Leading Mobile Development at Latin America’s Largest Real Estate Startup"
+              text="Tech Lead, Web and Mobile"
               icon="/icon-1.svg"
-              url=""
+              url="https://medium.com/@jcjiron4/casai-leading-mobile-development-at-latin-americas-largest-real-estate-startup-572af9028aeb"
 
             />
             <PortfolioCard
-              imageLummi="/open_source.webp"
-              heading="Open Source"
-              text="web, Real State"
+              imageLummi="/aceros.webp"
+              heading="Integrating Technology and Adding Value to Global Projects"
+              text="Software Development, Nextjs, Startup"
               icon="/icon.svg"
-              url=""
+              url="https://medium.com/@jcjiron4/moving-lake-integrating-technology-and-adding-value-to-global-projects-40075fbf97b9"
 
             />
           </div>
